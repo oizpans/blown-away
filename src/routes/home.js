@@ -20,7 +20,9 @@ const index = async (req, res, next) => {
 
   try {
     const Redis = require('redis');
-    const client = Redis.createClient();
+    const client = Redis.createClient({
+      host: 'redis'
+    });
     result.redis = true;
   } catch (error) {
     console.log(error);
@@ -29,7 +31,7 @@ const index = async (req, res, next) => {
 
   try {
     var NATS = require('nats');
-    var nats = NATS.connect();
+    var nats = NATS.connect('nats://nats:4222');
     result.nats = true;
   } catch (error) {
     console.log(error);
@@ -37,7 +39,7 @@ const index = async (req, res, next) => {
 
   try {
     const cassandra = require('cassandra-driver');
-    const client = new cassandra.Client({ contactPoints: ['h1', 'h2'], keyspace: 'ks1' });
+    const client = new cassandra.Client({ contactPoints: ['cassandra'], keyspace: 'ks1' });
     result.cassandra = true;
   } catch (error) {
     console.log(error);
@@ -46,7 +48,7 @@ const index = async (req, res, next) => {
   try {
     var elasticsearch = require('elasticsearch');
     var client = new elasticsearch.Client({
-      host: 'localhost:9200',
+      host: 'elasticsearch:9200',
       log: 'trace'
     });
     result.elasticsearch = true;
@@ -54,8 +56,11 @@ const index = async (req, res, next) => {
     console.log(error);
   }
 
+  const nodeVersion = process.version;
+
   return res.render('home', {
     result: result,
+    nodeVersion
   });
 
 };

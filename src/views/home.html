@@ -1,5 +1,5 @@
 <form class="form-signin">
-        <div class="text-center mb-4">
+        <div class="text-center mb-8">
           <img class="mb-4" src="/bootstrap-solid.svg" alt="" width="72" height="72">
           <h1 class="h3 mb-3 font-weight-normal">Blown Away</h1>
 
@@ -9,7 +9,7 @@
           <h1>NATS: {{#eq result.nats true}} <span class="badge badge-success">Success</span> {{else}} <span class="badge badge-danger">Failed</span> {{/eq}}</h1>
           <h1>Cassandra: {{#eq result.cassandra true}} <span class="badge badge-success">Success</span> {{else}} <span class="badge badge-danger">Failed</span> {{/eq}}</h1>
           <h1>Elasticsearch: {{#eq result.elasticsearch true}} <span class="badge badge-success">Success</span> {{else}} <span class="badge badge-danger">Failed</span> {{/eq}}</h1>
-
+          <h1>Node Version: {{ nodeVersion }}</h1>
         </div>
   
   
