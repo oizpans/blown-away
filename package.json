@@ -22,7 +22,8 @@
     "express-handlebars": "3.0.0",
     "feathers-mq": "git+https://github.com/oizpans/feathers-mq.git",
     "handlebars": "4.0.12",
-    "handlebars-helpers": "0.10.0"
+    "handlebars-helpers": "0.10.0",
+    "mongodb": "3.1.10"
   },
   "devDependencies": {
     "eslint": "5.9.0",

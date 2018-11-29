@@ -15,5 +15,4 @@ services:
       - mongo
       - redis
       - cassandra
-      - elasticsearch
       - nats
