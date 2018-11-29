@@ -15,5 +15,6 @@ services:
       - mongo
       - redis
       - cassandra
-      - elasticsearch
       - nats
+    ports:
+      - '3000:3000'
