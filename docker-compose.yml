@@ -16,3 +16,5 @@ services:
       - redis
       - cassandra
       - nats
+    ports:
+      - '3000:3000'
