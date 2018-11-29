@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  mongo:
+    image: mongo:3.4-jessie
+  redis:
+    image: redis:5-alpine
+  cassandra:
+    image: cassandra
+  nats:
+    image: nats
+  app:
+    build: ./
+    depends_on:
+      - mongo
+      - redis
+      - cassandra
+      - elasticsearch
+      - nats
