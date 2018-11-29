@@ -1,0 +1,31 @@
+{
+  "name": "blown-away",
+  "version": "1.0.0",
+  "description": "You just got blown away",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --ignore node_modules src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oizpans/blown-away.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oizpans/blown-away/issues"
+  },
+  "homepage": "https://github.com/oizpans/blown-away#readme",
+  "dependencies": {
+    "@feathersjs/express": "1.2.7",
+    "@feathersjs/feathers": "3.2.3",
+    "express-handlebars": "3.0.0",
+    "feathers-mq": "git+https://github.com/oizpans/feathers-mq.git",
+    "handlebars": "4.0.12",
+    "handlebars-helpers": "0.10.0"
+  },
+  "devDependencies": {
+    "eslint": "5.9.0",
+    "nodemon": "1.18.7"
+  }
+}
