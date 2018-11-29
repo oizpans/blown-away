@@ -7,14 +7,11 @@ services:
     image: redis:5-alpine
   cassandra:
     image: cassandra
-  nats:
-    image: nats
   app:
     build: ./
     depends_on:
       - mongo
       - redis
       - cassandra
-      - nats
     ports:
       - '3000:3000'
