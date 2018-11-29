@@ -19,6 +19,8 @@
   "dependencies": {
     "@feathersjs/express": "1.2.7",
     "@feathersjs/feathers": "3.2.3",
+    "cassandra-driver": "3.5.0",
+    "elasticsearch": "15.2.0",
     "express-handlebars": "3.0.0",
     "handlebars": "4.0.12",
     "handlebars-helpers": "0.10.0",

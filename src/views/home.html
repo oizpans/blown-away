@@ -4,8 +4,11 @@
           <h1 class="h3 mb-3 font-weight-normal">Blown Away</h1>
 
 
-          <h1>MongoDB: {{#eq mongo true}} <span class="badge badge-success">Success</span> {{else}} <span class="badge badge-danger">Failed</span> {{/eq}}</h1>
-            <h1>Redis: {{#eq redis true}} <span class="badge badge-success">Success</span> {{else}} <span class="badge badge-danger">Failed</span> {{/eq}}</h1>
+          <h1>MongoDB: {{#eq result.mongo true}} <span class="badge badge-success">Success</span> {{else}} <span class="badge badge-danger">Failed</span> {{/eq}}</h1>
+          <h1>Redis: {{#eq result.redis true}} <span class="badge badge-success">Success</span> {{else}} <span class="badge badge-danger">Failed</span> {{/eq}}</h1>
+          <h1>NATS: {{#eq result.nats true}} <span class="badge badge-success">Success</span> {{else}} <span class="badge badge-danger">Failed</span> {{/eq}}</h1>
+          <h1>Cassandra: {{#eq result.cassandra true}} <span class="badge badge-success">Success</span> {{else}} <span class="badge badge-danger">Failed</span> {{/eq}}</h1>
+          <h1>Elasticsearch: {{#eq result.elasticsearch true}} <span class="badge badge-success">Success</span> {{else}} <span class="badge badge-danger">Failed</span> {{/eq}}</h1>
 
         </div>
   
