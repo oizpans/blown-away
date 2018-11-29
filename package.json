@@ -22,7 +22,10 @@
     "express-handlebars": "3.0.0",
     "handlebars": "4.0.12",
     "handlebars-helpers": "0.10.0",
-    "mongodb": "3.1.10"
+    "ioredis": "4.2.0",
+    "mongodb": "3.1.10",
+    "nats": "1.0.1",
+    "redis": "2.8.0"
   },
   "devDependencies": {
     "eslint": "5.9.0",
