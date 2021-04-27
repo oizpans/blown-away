@@ -27,7 +27,7 @@
     "ioredis": "4.2.0",
     "mongodb": "3.1.10",
     "nats": "1.0.1",
-    "redis": "2.8.0"
+    "redis": "3.1.1"
   },
   "devDependencies": {
     "eslint": "5.9.0",
